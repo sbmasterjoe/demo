@@ -1,0 +1,43 @@
+{
+    "ansible_loop_var": "item",
+    "changed": false,
+    "failed": false,
+    "guest_disk_facts": {
+        "0": {
+            "backing_datastore": "Database",
+            "backing_eagerlyscrub": false,
+            "backing_filename": "[Database] CentOS7_Joe/CentOS7_Joe.vmdk",
+            "backing_thinprovisioned": false,
+            "backing_type": "FlatVer2",
+            "backing_uuid": "6000C299-9c17-51fa-4176-0cb064e8cd1e",
+            "backing_writethrough": false,
+            "capacity_in_bytes": 53687091200,
+            "capacity_in_kb": 52428800,
+            "controller_bus_number": 0,
+            "controller_key": 1000,
+            "controller_type": "paravirtual",
+            "key": 2000,
+            "label": "Hard disk 1",
+            "summary": "52,428,800 KB",
+            "unit_number": 0
+        }
+    },
+    "invocation": {
+        "module_args": {
+            "datacenter": "Vast_DC",
+            "folder": null,
+            "hostname": "192.168.168.168",
+            "moid": null,
+            "name": "CentOS7_Joe",
+            "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER",
+            "port": 443,
+            "proxy_host": null,
+            "proxy_port": null,
+            "use_instance_uuid": false,
+            "username": "administrator@vsphere.local",
+            "uuid": null,
+            "validate_certs": false
+        }
+    },
+    "item": "CentOS7_Joe"
+}

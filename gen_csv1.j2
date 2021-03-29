@@ -1,0 +1,6 @@
+{% set s_no = 1 %}
+s.no,instance_id,im......
+{% for echo in out.instances %}
+{{s_no}},{{each.instance_id}},{{each.image_id}}
+{%set s_no = s_no + 1%}
+{% endfor %}

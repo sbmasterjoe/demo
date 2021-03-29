@@ -1,0 +1,25 @@
+machine,Memory_inMB,cpucount
+  vRealize-Operations-Manage, 8192,2 
+  HyTrust-KeyControl-5.3-530000331, 8192,2 
+  CentOS-Test-Lewis, 4096,2 
+  CentOS7_Joe, 8192,8 
+  centos8_kit, 4096,4 
+  Windows10_Joe, 8192,8 
+  LABCluster-01, 16384,4 
+  CentOS -7 Otrs 6.0 Prod, 8192,4 
+  Domain Controller, 8192,4 
+  ACMC, 8192,4 
+  ACM, 8192,4 
+  VC7, 12288,2 
+  Automation Anywhere-A2019-06292020, 32768,8 
+  Ubuntu_Joe, 8192,8 
+  win19, 1024,2 
+  win_ansible_object, 4096,4 
+  win17, 1024,2 
+  ESXi-2, 8192,4 
+  win22, 1024,2 
+  CentOS8_Joe, 8192,8 
+  win23, 1024,2 
+  testans, 2048,4 
+  CentOS-7Otrs 6.0- QA, 8192,4 
+ 

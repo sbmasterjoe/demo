@@ -1,0 +1,14 @@
+ansible -i inventory_kerberos.ini windows -m win_ping
+
+
+ansible windows -m win_user -a "name=aa passwd=123456"
+
+ansible windows -m win_user -a "name=user1 password=123 groups='Administrators,Remote Desktop Users'"
+
+ansible windows -m win_reboot
+
+
+
+
+
+ansible windows -m win_ping
