@@ -2,13 +2,13 @@
    name: deploy
    gather_facts: false
    vars_prompt:
-	-name: "esxi_password"
+        -name: "esxi_password"
 	 prompt: "exsi pass"
-	-name: "vcenterpass"
+        -name: "vcenterpass"
 	 prompt: "vc pass"
-	-name: "vcenterlicens"
+        -name: "vcenterlicens"
 	 prompt: "vc licens"
-	-name: "vsphere licens"
+        -name: "vsphere licens"
 	 prompt: "vsp licens"
   vars_files: vable.yml
  tasks:
