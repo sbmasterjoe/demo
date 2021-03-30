@@ -1,4 +1,4 @@
-- host: localhost
+- host: linux_demo
    name: deploy
    gather_facts: false
    vars_prompt:
