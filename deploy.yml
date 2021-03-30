@@ -14,7 +14,7 @@
  tasks:
    - name: setting fact
       set_fact:
-	#上面参数:"{{ 相关var}}"
+       #上面参数:"{{ 相关var}}"
 
 
 - import_playbook:
