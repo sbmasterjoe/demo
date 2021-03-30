@@ -1,1 +1,18 @@
+[windows]
+tp12win01  ansible_host=127.0.0.1 #control hosts template in host1 first machine
 
+[windows:vars]
+ansible_user=administrator
+ansible_password=A@bcd1234
+ansible_port=5985
+ansible_connection=winrm
+#ansible_winrm_transport=ntlm
+ansible_winrm_server_cert_validation=ignore
+
+
+[linux_joe]
+192.168.168.58
+
+[linux_joe:vars]
+ansible_user=root
+ansible_password=sbmasterjoe
