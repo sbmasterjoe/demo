@@ -3,7 +3,7 @@
    gather_facts: false
    vars_prompt:
         -name: "esxi_password"
-	 prompt: "exsi pass"
+         prompt: "exsi pass"
         -name: "vcenterpass"
          prompt: "vc pass"
         -name: "vcenterlicens"
