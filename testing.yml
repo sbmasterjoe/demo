@@ -7,7 +7,7 @@
         password: 'Abcd!23456'
         folder: "Vast_DC/vm/"
         validate_certs: "false"
-      delegate_to: localhost
+#      delegate_to: localhost
       register: vm_info
     
     - debug:
