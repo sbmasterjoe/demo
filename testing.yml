@@ -1,22 +1,6 @@
 - hosts: demo1
   tasks:
-    - name: Get virtual machine info
-      community.vmware.vmware_vm_info:
-        hostname: '192.168.168.168'
-        username: 'administrator@vsphere.local'
-        password: 'Abcd!23456'
-        folder: "Vast_DC/vm/"
-        validate_certs: "false"
-#      delegate_to: localhost
-      register: vm_info
-    
-    - debug:
-        msg: "{{vm_info}}"
-
-
-#    - debug:
-#        msg: "{{ item.tags }}"
-      with_items:
-         - "{{ vm_info.virtual_machines | json_query(query) }}"
-      #vars:
-        #query: "[?guest_name=='win17']"
+    - name: hellotest
+      debug:
+        msg: "hello"
+      
