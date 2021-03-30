@@ -1,4 +1,4 @@
-- hosts: demo1
+- hosts: linux_demo 
   tasks:
     - name: hellotest
       debug:
