@@ -1,4 +1,4 @@
-- hosts: 192.168.168.58
+- hosts: demo1
   tasks:
     - name: Get virtual machine info
       community.vmware.vmware_vm_info:
