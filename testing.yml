@@ -1,4 +1,4 @@
-- hosts: linux_demo
+- hosts: 192.168.168.58
   tasks:
     - name: hellotest
       debug:
