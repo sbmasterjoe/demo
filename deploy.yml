@@ -5,11 +5,11 @@
         -name: "esxi_password"
 	 prompt: "exsi pass"
         -name: "vcenterpass"
-	 prompt: "vc pass"
+         prompt: "vc pass"
         -name: "vcenterlicens"
-	 prompt: "vc licens"
+         prompt: "vc licens"
         -name: "vsphere licens"
-	 prompt: "vsp licens"
+         prompt: "vsp licens"
   vars_files: vable.yml
  tasks:
    - name: setting fact
