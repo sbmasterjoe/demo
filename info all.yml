@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: linux_demo 
   gather_facts: no
   become: no
   vars_prompt:
@@ -21,7 +21,7 @@
         #tags: yes
         datacenter: Vast_DC
         validate_certs: no
-      delegate_to: localhost
+      #delegate_to: localhost
       register: vmguestfacts
     - debug: 
         msg: 
