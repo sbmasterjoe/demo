@@ -1,28 +1,16 @@
 - hosts: linux_demo 
   gather_facts: no
   become: no
-  vars_prompt:
-  #- name: passa
-   # prompt: pls insert pass
-    #private: yes
-  vars:
-    vcenter_hostname: 192.168.168.168
-    vcenter_username: administrator@vsphere.local
-    vcenter_password: Abcd!23456
   tasks:
-
-    
-    - name:  Read VMware guest facts
-      vmware_host_info:
-        datacenter: "Vast_DC"
-        hostname: "{{ vcenter_hostname }}"
-        password: "{{ vcenter_password }}"
-        username: "{{ vcenter_username }}"
-        #tags: yes
-        datacenter: Vast_DC
-        validate_certs: no
+    - name: Get virtual machine info
+      community.vmware.vmware_vm_info:
+        hostname: '192.168.168.168'
+        username: 'administrator@vsphere.local'
+        password: 'Abcd!23456'
+        folder: "Vast_DC/vm/"
+        validate_certs: "false"
       #delegate_to: localhost
-      register: vmguestfacts
-    - debug: 
-        msg: 
-        - "{{vmguestfacts}}"
+      register: vm_info
+    
+    - debug:
+        msg: "{{vm_info}}"
