@@ -1,4 +1,4 @@
-- hosts: linux_demo 
+- hosts: linux_joe
   gather_facts: no
   become: no
   tasks:
