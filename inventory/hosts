@@ -14,5 +14,5 @@ ansible_winrm_server_cert_validation=ignore
 192.168.168.58
 
 [linux_joe:vars]
-ansible_user=root
-ansible_password=sbmasterjoe
+#ansible_user=root
+#ansible_password=sbmasterjoe
